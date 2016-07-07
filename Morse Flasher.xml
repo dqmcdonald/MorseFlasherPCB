@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/que/Documents/Electronics/MorseFlasherPCB/Morse Flasher.sch</source>
+    <date>Thursday, 07 July 2016 04:09:48 pm</date>
+    <tool>Eeschema 4.0.2-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Morse Flasher</title>
+        <company>Quentin McDonald</company>
+        <rev>0.1</rev>
+        <date>2/7/2016</date>
+        <source>Morse Flasher.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>ATTINY25-45-85/DIP-SO</value>
+      <libsource lib="attiny" part="ATTINY25-45-85/DIP-SO"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57772B5A</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>BATTERY</value>
+      <libsource lib="device" part="BATTERY"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57776BAA</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57776C20</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57776D61</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>POT</value>
+      <libsource lib="device" part="POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57776E12</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57776E9E</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>120K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57776ECB</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>MOSFET_P</value>
+      <libsource lib="device" part="MOSFET_P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577CBBFF</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="attiny" part="ATTINY25-45-85/DIP-SO">
+      <fields>
+        <field name="Reference"> U</field>
+        <field name="Value">ATTINY25-45-85/DIP-SO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="(PCINT5/RESET/ADC0/dW)_PB5" type="input"/>
+        <pin num="2" name="(PCINT3/XTAL1/CLKI/OC1B/ADC3)_PB3" type="BiDi"/>
+        <pin num="3" name="(PCINT4/XTAL2/CLKO/OC1B/ADC2)_PB4" type="BiDi"/>
+        <pin num="4" name="GND" type="power_out"/>
+        <pin num="5" name="(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)_PB0" type="BiDi"/>
+        <pin num="6" name="(MISO/DO/AIN1/OC0B/OC1A/PCINT1)_PB1" type="BiDi"/>
+        <pin num="7" name="(SCK/USCK/ADC1/T0/NT0/PCINT2)_PB2" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="BATTERY">
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">BATTERY</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Condensateur non polarise</description>
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="MOS_P">
+      <aliases>
+        <alias>MOSFET_P</alias>
+      </aliases>
+      <docs>transistors/mos/*.*</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">MOS_P</field>
+      </fields>
+      <pins>
+        <pin num="D" name="D" type="passive"/>
+        <pin num="G" name="G" type="input"/>
+        <pin num="S" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="POT">
+      <description>Potentionmetre</description>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistance</description>
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="attiny">
+      <uri>/Users/que/Library/Application Support/kicad/library/attiny.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/Users/que/Library/Application Support/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="2" name="VCC">
+      <node ref="Q1" pin="S"/>
+      <node ref="U1" pin="8"/>
+      <node ref="R1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="RV1" pin="1"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="BT1" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="Q1" pin="G"/>
+      <node ref="C1" pin="2"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="4" name="Net-(RV1-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="RV1" pin="2"/>
+    </net>
+    <net code="5" name="Net-(BT1-Pad1)">
+      <node ref="BT1" pin="1"/>
+      <node ref="Q1" pin="D"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="8" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="9" name="Net-(D1-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="10" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+  </nets>
+</export>

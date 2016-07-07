@@ -1,0 +1,18 @@
+Source,/Users/que/Documents/Electronics/MorseFlasherPCB/Morse Flasher.sch
+Kicad Rev,Eeschema 4.0.2-stable
+Generated Date,Thursday, 07 July 2016 04:09:48 pm
+
+Title,Morse Flasher
+Company,Quentin McDonald
+Revision,0.1
+Date Issue,2/7/2016
+
+Reference,Value,Library,Library Ref
+U1,ATTINY25-45-85/DIP-SO,attiny,ATTINY25-45-85/DIP-SO
+BT1,BATTERY,device,BATTERY
+C1,100nF,device,C
+R1,10K,device,R
+RV1,POT,device,POT
+D1,LED,device,LED
+R2,120K,device,R
+Q1,MOSFET_P,device,MOSFET_P

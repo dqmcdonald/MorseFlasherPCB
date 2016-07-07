@@ -1,0 +1,59 @@
+Cmp-Mod V01 Created by CvPcb (2014-02-26 BZR 4721)-product date = Thursday, 07 July 2016 14:26:28
+
+BeginCmp
+TimeStamp = /57776BAA;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = DQM:Coin_Cell_12mm_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = /57776C20;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = discret:C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /57776E9E;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = DQM:TwinScrewTerminal;
+EndCmp
+
+BeginCmp
+TimeStamp = /577CBBFF;
+Reference = Q1;
+ValeurCmp = MOSFET_P;
+IdModule  = DQM:pChannelMostfetSot23;
+EndCmp
+
+BeginCmp
+TimeStamp = /57776D61;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = discret:R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /57776ECB;
+Reference = R2;
+ValeurCmp = 120K;
+IdModule  = discret:R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /57776E12;
+Reference = RV1;
+ValeurCmp = POT;
+IdModule  = pin_array:PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /57772B5A;
+Reference = U1;
+ValeurCmp = ATTINY25-45-85/DIP-SO;
+IdModule  = dip_sockets:DIP-8__300_ELL;
+EndCmp
+
+EndListe
